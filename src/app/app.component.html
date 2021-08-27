@@ -1,14 +1,16 @@
-<!--
+
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LISTADO ESTUDIANTES</a>
-      <button type="button" class="btn btn-warning btn-lg">Agregar Estudiante</button>
-      <button type="button" class="btn btn-warning btn-lg">Agregar Notas</button>
+      <button type="button" class="btn btn-warning btn-lg float-rigth" routerLink='principal/registro'>Agregar Estudiante</button>
+      <button type="button" class="btn btn-warning btn-lg float-right"routerLink='principal/notas'>Agregar Notas</button>
     </div>
   </nav>
 </div>
--->
+
+
+<!--
 <h1>Listado de Estudiantes</h1>
   <ul>
       <li><a routerLink="/principal/registro">Registro</a></li>
@@ -17,8 +19,53 @@
   <ul>
       <li><a routerLink="/principal/notas">Notas</a></li>
   </ul>
+-->
 
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
+
+<div class="container">
+  <div class="row">
+
+      <table class="table table-striped mt-5">
+       <thead>
+        <tr>
+          <th>NOMBRE</th>
+          <th>MATERIA</th>
+          <th>NOTA 1</th>
+          <th>NOTA 2</th>
+          <th>NOTA 3</th>
+          <th>PROMEDIO</th>
+          <th><i class="far fa-edit"></i></th>
+        </tr>
+       </thead>
+  
+       
+      <tbody>
+        <tr>
+          <td>Anael Ramirez</td>
+          <td>Programacion I</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>7.0</td>
+         
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Editar</button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Editar Estudiante</a></li>
+                <li><a class="dropdown-item" href="#">Editar Nota</a></li>
+              </ul>
+                <a href="#" class="btn btn-danger">Eliminar</a>
+          </div>
+          </td>
+        </tr>
+      </tbody>  
+    </table>
+  </div>
+</div>
+
+ 
 
 
 
