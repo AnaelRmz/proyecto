@@ -5,6 +5,10 @@ import { NotasComponent } from './pages/notas/notas.component';
 import { PrincipalRoutingModule } from './principal-routing.module';
 
 
+import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -14,6 +18,7 @@ import { PrincipalRoutingModule } from './principal-routing.module';
   imports: [
     CommonModule,
     PrincipalRoutingModule,
+    FormsModule
   ]
 })
 export class PrincipalModule { }

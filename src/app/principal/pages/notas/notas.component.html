@@ -1,21 +1,23 @@
+
 <div class="container">
-    <div class="row">
+  <div class="row">
+    <div class="col-3 mt-2" *ngFor="let u of respuesta">
+
+        <div class="card" style="width: 18rem;">
           
-  
-          <form>
-              <div class="mb-3 mt-4">
-                <label for="exampleInputEmail1" class="form-label">INGRESAR NOTA 1</label>
-                <input type="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar nota">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">INGRESAR NOTA 2</label>
-                <input type="nombre" class="form-control" id="exampleInputPassword1" placeholder="Ingresar nota">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">INGRESAR NOTA 3</label>
-                <input type="nombre" class="form-control" id="exampleInputPassword1" placeholder="Ingresar nota">
-              </div>
-              <button type="submit" class="btn btn-primary">Guardar</button>
-           </form>
+            <div class="card-body">
+              <h5 class="card-title">{{u.Nombre}}</h5>
+              <p class="card-text">Genero: {{ u.Genero }}</p>
+              <p class="card-text">Fecha Nacimiento: {{ u.FechaNacimiento }}</p>
+              <p class="card-text">Carrera: {{ u.Carrera }}</p>
+              <p class="card-text">Materias: {{ u.idMateria }}</p>
+              <a href="#" class="btn btn-dark">Editar</a>
+              <a href="#" class="btn btn-danger">Eliminar</a>
+           </div>
+      
+      </div>
+    </div>
   </div>
 </div>
+
+
